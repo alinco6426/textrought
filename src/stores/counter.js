@@ -1,12 +1,20 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+// import { ref } from "vue";
+// import { defineStore } from "pinia";
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+// export const useFetchStore = defineStore("fetch", () => {
+//   const message = ref("");
+//   const url = "https://test-rtc.onrender.com";
 
-  return { count, doubleCount, increment }
-})
+
+//   async function fetchRender(){
+//     try {
+//       const response  = fetch(url);
+//       const data = await response.json();
+//       message.value = data.message;
+//       console.log(data);
+//     } catch (error) {
+//       console.log(error)
+//     }
+//   };
+//   return{message  , fetchRender};
+// })
